@@ -1,10 +1,38 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
+import BriefcaseIcon from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Hero from "@/components/Hero.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+
+import Contact from "@/sections/Contact.astro";
+import Habilidades from "@/sections/Habilidades.astro";
+import Proyectos from "@/sections/Proyectos.astro";
 ---
 
 <Layout title="Kevin Portfolio | Dev Junior">
-	<main>
-		<Header />
+	<main class="px-4">
+		<SectionContainer class="py-16">
+			<Hero>
+				<slot />
+			</Hero>
+		</SectionContainer>
+		<div class="space-y-24 mb-32">
+			<SectionContainer id="skills">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+					<BriefcaseIcon class="size-8" /> Experiencia
+				</h2>
+				<Habilidades />
+			</SectionContainer>
+			<SectionContainer id="contacto">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+					<CodeIcon class="size-8" />
+					Proyectos
+				</h2>
+				<Proyectos />
+			</SectionContainer>
+		</div>
 	</main>
 </Layout>
