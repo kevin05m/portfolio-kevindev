@@ -1,5 +1,9 @@
 ---
 import Badge from "@/components/Badge.astro";
+import GithubIcon from "@/components/icons/Github.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import TwitterIcon from "@/components/icons/Twitter.astro";
+import YoutubeIcon from "@/components/icons/Youtube.astro";
 ---
 
 <div class="max-w-xl">
@@ -17,9 +21,41 @@ import Badge from "@/components/Badge.astro";
 		Bienvenido, soy Kevin Moreno
 	</h1>
 	<p
-		class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-lime-400 [&>strong]:text-lime-500 [&>strong]:font-semibold dark:text-gray-300">
+		class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-lime-400 [&>strong]:text-lime-500 [&>strong]:font-semibold dark:text-gray-300 mb-4">
 		Estudiante de la carrera de <strong>Ingenieria en Software</strong> de la Escuela
 		Superior Politécnica de Chimborazo (<strong>ESPOCH</strong>) en Ecuador 🇪🇨.
 		Interesado en aprender nuevas tecnologías.
 	</p>
+	<ul
+		class="flex gap-4 [&>li>a]:flex [&>li>a]:items-center [&>li>a]:justify-center [&>li]:bg-neutral-700 [&>li]:rounded-full [&>li]:px-4 [&>li]:py-1">
+		<li class="transition hover:scale-105">
+			<a href="https://github.com/kevin05m" target="_blank" rel="noopener">
+				<GithubIcon class="size-8" />
+				GitHub
+			</a>
+		</li>
+		<li class="transition hover:scale-105">
+			<a
+				href="https://linkedin.com/in/kevin05m/"
+				target="_blank"
+				rel="noopener">
+				<LinkedInIcon class="size-8" />
+				LinkedIn</a
+			>
+		</li>
+		<li class="transition hover:scale-105">
+			<a href="https://twitter.com/elkevin_ecu/" target="_blank" rel="noopener">
+				<TwitterIcon class="size-8" />
+				Twitter</a
+			>
+		</li>
+		<!-- Youtube Icon 
+		<li class="transition hover:scale-105">
+			<a href="#">
+				<YoutubeIcon class="size-8" />
+				YouTube</a
+			>
+		</li>
+		-->
+	</ul>
 </div>

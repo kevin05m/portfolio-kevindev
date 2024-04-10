@@ -1,8 +1,42 @@
+---
+import GithubIcon from "@/components/icons/Github.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import TwitterIcon from "@/components/icons/Twitter.astro";
+---
+
 <footer class="footer">
-	<div class="w-screen text-sm text-center p-8 text-neutral-400 bg-neutral-950">
+	<div
+		class="flex w-screen text-sm text-center p-8 text-neutral-400 justify-around px-20 items-center border-t-2 border-t-neutral-100 border-opacity-10">
 		<p>
-			Copyright © 2022. <a href="#">@bl4zek</a><br />
-			All Rights Reserved
+			© 2024 <a
+				href="#"
+				class="hover:text-lime-400"
+				rel="noopener"
+				target="_blank">Kevin05m</a
+			>
 		</p>
+		<ul class="flex gap-4">
+			<li class="transition hover:scale-105">
+				<a href="https://github.com/kevin05m" target="_blank" rel="noopener">
+					<GithubIcon class="size-8" />
+				</a>
+			</li>
+			<li class="transition hover:scale-105">
+				<a
+					href="https://linkedin.com/in/kevin05m/"
+					target="_blank"
+					rel="noopener">
+					<LinkedInIcon class="size-8" /></a
+				>
+			</li>
+			<li class="transition hover:scale-105">
+				<a
+					href="https://twitter.com/elkevin_ecu/"
+					target="_blank"
+					rel="noopener">
+					<TwitterIcon class="size-8" /></a
+				>
+			</li>
+		</ul>
 	</div>
 </footer>
