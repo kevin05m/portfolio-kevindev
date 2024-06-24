@@ -1,0 +1,27 @@
+---
+import BentoItem from "@/components/BentoItem.astro";
+---
+
+<section
+	class={`
+    w-full max-w-[1400px]
+    gap-4 
+    mx-auto
+  `}>
+	<BentoItem class="col-span-10" title="Template bot de discord en Python">
+		<div slot="image" class="w-full h-full" data-src="/botpython.png"></div>
+		<p
+			slot="content"
+			class="max-w-xl text-base"
+			set:html="Un template para desarrollar un bot de discord con Discord Py usando cogs."
+		/>
+	</BentoItem>
+	<BentoItem class="col-span-10" title="Template bot de discord en Python">
+		<div slot="image" class="w-full h-full" data-src="/botpython.png"></div>
+		<p
+			slot="content"
+			class="max-w-xl text-base"
+			set:html="Un template para desarrollar un bot de discord con Discord Py usando cogs."
+		/>
+	</BentoItem>
+</section>
